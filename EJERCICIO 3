@@ -1,0 +1,15 @@
+let precioProducto = prompt("Ingrese el precio del producto:");
+
+if (isNaN(precioProducto) || precioProducto <= 0) {
+    alert("El precio ingresado no es válido.");
+} else {
+    let cantidad = prompt("Ingrese la cantidad deseada:");
+
+    if (isNaN(cantidad) || cantidad <= 0) {
+        alert("La cantidad ingresada no es válida.");
+    } else {
+
+        let precioTotal = precioProducto * cantidad;
+        alert("El precio total de la compra es: " + precioTotal);
+    }
+}
